@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Tester</h1>
+        <p id="random-paragraph">Press Start to get a random paragraph...</p>
+        <textarea id="input-area" disabled></textarea>
+        
+        <div class="stats">
+            <p>Time Left: <span id="time-left">60</span> seconds</p>
+            <p>Mistakes: <span id="mistakes">0</span></p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>CPM: <span id="cpm">0</span></p>
+            <p id="progress-tracker">Progress: 0 / 0 characters</p>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="reset-btn" disabled>Reset</button>
+            <input type="number" id="time-duration" value="60" min="10" max="300"> Set Timer (seconds)
+            <label>
+                <input type="checkbox" id="theme"> Dark Mode
+            </label>
+        </div>
+
+        <div id="keyboard-container">
+            <div id="keyboard"></div>
+        </div>
+
+        <h3>Leaderboard</h3>
+        <ul id="top-scores"></ul>
+        <a href="auth.html" class="btn">Back to Home</a>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
